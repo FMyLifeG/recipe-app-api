@@ -39,7 +39,7 @@ class ModelTests(TestCase):
 
     def test_create_superuser(self):
         """Test creating superuser"""
-        user = get_user_model().objects_create_superuser(
+        user = get_user_model().objects.create_superuser(
             'test@example.com',
             'test123',
         )
